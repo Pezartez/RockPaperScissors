@@ -1,10 +1,8 @@
-/* 
-1. first function should output computer's choice
-rock,paper or scissors (random select)
-
-*/
+/* Selects Computer Choice */
+let choices = ["rock", "paper", "scissors"];
 function getComputerChoice() {
-
+    let computerSelection = choices[(Math.floor(Math.random() * choices.length))];
+    return computerSelection;
 }
 
 /* 2. second function will play through
