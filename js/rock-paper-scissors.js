@@ -35,6 +35,7 @@ function playRound() {
     // Uses both inputs to decide round winner
     if (playerSelection === computerSelection){
         console.log("Tie Game");
+        playerScore = playerScore + .5;
     } else if (playerSelection === choices[0] && computerSelection === choices[1]) {
         console.log("Your Lose! Paper beats Rock");
     } else if (playerSelection === choices[0] && computerSelection === choices[2]) {
